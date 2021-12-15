@@ -1,0 +1,9 @@
+{
+  "name": "@bridge/oracle",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "ts-node": "10.4.0"
+  }
+}
