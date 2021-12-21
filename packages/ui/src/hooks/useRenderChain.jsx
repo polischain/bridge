@@ -29,7 +29,7 @@ export const useRenderChain = () => {
             borderRadius={5}
             size="1"
             cursor="pointer"
-            colorScheme="blue"
+            color="blue"
             onClick={() => switchChain(chainId)}
           >
             <Image boxSize={5} src={MetamaskFox} mr={2} />

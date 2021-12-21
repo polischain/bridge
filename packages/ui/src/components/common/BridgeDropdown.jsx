@@ -46,6 +46,7 @@ export const BridgeDropdown = ({ close }) => {
         rightIcon={<DownArrowIcon boxSize="0.5rem" color="white" />}
         color="white"
         bg="none"
+        _active={{ color: "white", bgColor: "blue" }}
         _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
         p={2}
       >
@@ -53,7 +54,7 @@ export const BridgeDropdown = ({ close }) => {
           {networks[currentBridgeDirection].label}
         </Text>
       </MenuButton>
-      <MenuList border="none" boxShadow="0 0.5rem 1rem #CADAEF" zIndex="3">
+      <MenuList border="none" zIndex="3">
         {Object.entries(networks).map(([key, { label }]) => (
           <MenuItem
             value={key}

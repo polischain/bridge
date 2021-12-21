@@ -22,17 +22,17 @@ export const WalletSelector = ({ close }) => {
     <Flex>
       <Popover placement={placement}>
         <PopoverTrigger>
-          <Button colorScheme="blue" px={3} leftIcon={<WalletIcon />}>
+          <Button color="blue" px={3} leftIcon={<WalletIcon />}>
             <Text fontSize="sm"> {getAccountString(account)} </Text>
             <Flex
               justify="center"
               align="center"
-              bg="white"
+              bg="blue"
               borderRadius="6px"
               px={{ base: 3, md: 2, lg: 3 }}
               height="2rem"
               fontSize="sm"
-              color="blue"
+              color="white"
               fontWeight="600"
               ml={3}
             >

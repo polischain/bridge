@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Flex,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -13,14 +12,10 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import ClaimTokensImage from "assets/multiple-claim.svg";
 import { LoadingModal } from "components/modals/LoadingModal";
 import { useClaimableTransfers } from "hooks/useClaimableTransfers";
-import { LOCAL_STORAGE_KEYS } from "lib/constants";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-const { DONT_SHOW_CLAIMS } = LOCAL_STORAGE_KEYS;
 
 export const ClaimTokensModal = () => {
   const { transfers, loading } = useClaimableTransfers();
@@ -28,13 +23,10 @@ export const ClaimTokensModal = () => {
 
   const onClose = () => {
     setOpen(false);
-    window.localStorage.setItem(DONT_SHOW_CLAIMS, "true");
   };
 
   useEffect(() => {
-    const dontShowClaims =
-      window.localStorage.getItem(DONT_SHOW_CLAIMS) === "true";
-    setOpen(!!transfers && transfers.length > 0 && !dontShowClaims);
+    setOpen(!!transfers && transfers.length > 0);
   }, [transfers]);
 
   if (loading) return <LoadingModal />;
@@ -50,7 +42,6 @@ export const ClaimTokensModal = () => {
         >
           <ModalHeader p={6}>
             <Text>Claim Your Tokens</Text>
-            <Image src={ClaimTokensImage} w="100%" mt={4} />
           </ModalHeader>
           <ModalCloseButton
             size="lg"

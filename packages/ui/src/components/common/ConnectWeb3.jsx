@@ -24,6 +24,7 @@ export const ConnectWeb3 = () => {
       <Text
         as="span"
         fontWeight="bold"
+        color="blue"
         textTransform="uppercase"
         fontSize="0.9rem"
       >
@@ -62,7 +63,6 @@ export const ConnectWeb3 = () => {
   return (
     <Flex
       background="white"
-      boxShadow="0px 1rem 2rem rgba(204, 218, 238, 0.8)"
       borderRadius="1rem"
       direction="column"
       align="center"

@@ -65,7 +65,7 @@ export const BridgeHistory = ({ page }) => {
       />
       <ManualClaim handleClaimError={handleClaimError} />
       <Flex justify="space-between" align="center" mb={4}>
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontSize="xl" fontWeight="bold" color="white">
           History
         </Text>
         <Checkbox
@@ -76,7 +76,9 @@ export const BridgeHistory = ({ page }) => {
           size="lg"
           variant="solid"
         >
-          <Text fontSize="sm">Show only unreceived</Text>
+          <Text fontSize="sm" color="white">
+            Show only unreceived
+          </Text>
         </Checkbox>
       </Flex>
 

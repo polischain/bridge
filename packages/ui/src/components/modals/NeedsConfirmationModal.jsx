@@ -3,7 +3,6 @@ import {
   AlertIcon,
   Box,
   Flex,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -12,7 +11,6 @@ import {
   ModalOverlay,
   Text,
 } from "@chakra-ui/react";
-import ChangeNetworkImage from "assets/change-network.png";
 import { useBridgeContext } from "contexts/BridgeContext";
 import { useBridgeDirection } from "hooks/useBridgeDirection";
 import { useRenderChain } from "hooks/useRenderChain";
@@ -50,7 +48,6 @@ export const NeedsConfirmationModal = ({
         >
           <ModalHeader p={6}>
             <Text>Claim Your Tokens</Text>
-            <Image src={ChangeNetworkImage} w="100%" mt={4} />
           </ModalHeader>
           <ModalCloseButton
             size="lg"

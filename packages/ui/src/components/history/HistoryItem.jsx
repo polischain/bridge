@@ -46,12 +46,12 @@ const Tag = ({ bg, txt }) => (
 );
 
 const networkTags = {
-  1: <Tag bg="#5A74DA" txt="ETH" />,
-  56: <Tag bg="#5A74DA" txt="BSC" />,
-  137: <Tag bg="#5A74DA" txt="POLYGON" />,
-  250: <Tag bg="#5A74DA" txt="FTM" />,
-  4689: <Tag bg="#5A74DA" txt="IOTEX" />,
-  333999: <Tag bg="#5A74DA" txt="POLIS" />,
+  1: <Tag bg="#0084ff" txt="ETH" />,
+  56: <Tag bg="#0084ff" txt="BSC" />,
+  137: <Tag bg="#0084ff" txt="POLYGON" />,
+  250: <Tag bg="#0084ff" txt="FTM" />,
+  4689: <Tag bg="#0084ff" txt="IOTEX" />,
+  333999: <Tag bg="#0084ff" txt="POLIS" />,
 };
 
 const getNetworkTag = (chainId) => networkTags[chainId];
@@ -138,7 +138,6 @@ export const HistoryItem = ({
     <Flex
       w="100%"
       background="white"
-      boxShadow="0px 1rem 2rem rgba(204, 218, 238, 0.8)"
       borderRadius="1rem"
       fontSize="sm"
       p={4}

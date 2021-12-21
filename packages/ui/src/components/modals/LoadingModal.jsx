@@ -25,7 +25,6 @@ export const LoadingModal = ({ loadingText }) => {
         <>
           {loadingText ? (
             <ModalContent
-              boxShadow="0px 1rem 2rem #617492"
               borderRadius={{ base: "1rem", md: "full" }}
               mx={{ base: 12, lg: 0 }}
               maxW={{ base: "20rem", md: "25rem" }}

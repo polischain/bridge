@@ -3,7 +3,6 @@ import {
   AlertIcon,
   Button,
   Flex,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -15,7 +14,6 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
-import ClaimTokenImage from "assets/claim.svg";
 import { LoadingModal } from "components/modals/LoadingModal";
 import { useBridgeContext } from "contexts/BridgeContext";
 import { useWeb3Context } from "contexts/Web3Context";
@@ -116,7 +114,6 @@ export const ClaimTransferModal = ({ message, setMessage }) => {
         >
           <ModalHeader p={6}>
             <Text>Claim Your Tokens</Text>
-            <Image src={ClaimTokenImage} w="100%" mt={4} />
           </ModalHeader>
           <ModalCloseButton
             size="lg"

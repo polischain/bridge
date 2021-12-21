@@ -55,7 +55,9 @@ export const Header = () => {
       minH={20}
       px={{ base: 4, sm: 8 }}
       w="100%"
-      background={isOpen ? { base: "white", md: "transparent" } : "transparent"}
+      background={
+        isOpen ? { base: "background", md: "transparent" } : "transparent"
+      }
       direction={{ base: "column", md: "row" }}
       mb={isOpen ? { base: 4, md: 0 } : 0}
       boxShadow={
