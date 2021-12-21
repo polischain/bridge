@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "format": "prettier --write '**/*.{ts,tsx}'",
-    "oracle": "yarn workspace @bridge/oracle start"
+    "oracle": "yarn workspace @bridge/oracle start",
+    "ui": "yarn workspace @bridge/ui start"
   },
   "devDependencies": {
     "@types/node": "16.11.13",
