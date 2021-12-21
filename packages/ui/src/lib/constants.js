@@ -166,13 +166,15 @@ export const networkCurrencies = {
 
 export const chainUrls = {
   1: {
-    rpc: process.env.REACT_APP_MAINNET_RPC_URL.split(" "),
+    rpc: "https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet  https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet/archive".split(),
     explorer: "https://etherscan.io",
     chainId: 1,
     name: networkNames[1],
   },
   56: {
-    rpc: process.env.REACT_APP_BSC_RPC_URL.split(" "),
+    rpc: "https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/bsc/mainnet https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/bsc/mainnet/archive".split(
+      " "
+    ),
     explorer: "https://bscscan.com",
     chainId: 56,
     name: networkNames[56],
