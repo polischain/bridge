@@ -44,7 +44,7 @@ export const ConnectWeb3 = () => {
     }
     return (
       <Text color="greyText" mb={4} textAlign="center">
-        To access the {renderBridgeLabel()} OmniBridge, please switch to
+        To access the {renderBridgeLabel()} Acheron, please switch to
         {renderChain(homeChainId)}
         or
         {renderChain(foreignChainId)}
@@ -73,7 +73,7 @@ export const ConnectWeb3 = () => {
       mx={4}
     >
       <Flex
-        bg={account && !loading ? "red.500" : "blue.500"}
+        bg={account && !loading ? "red" : "blue"}
         borderRadius="50%"
         p="1rem"
         justify="center"

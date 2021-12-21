@@ -37,7 +37,7 @@ export const SwitchButton = () => {
           lg: "translateX(-50%) translateY(calc(-100% - 1.25rem))",
         }}
         borderRadius="0.5rem"
-        color="blue.500"
+        color="blue"
         _hover={{ bg: "blackAlpha.100" }}
         onClick={switchOnClick}
       />

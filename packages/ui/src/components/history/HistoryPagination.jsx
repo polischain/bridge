@@ -41,7 +41,7 @@ export const HistoryPagination = ({ numPages, currentPage }) => {
         <LeftIcon
           boxSize={6}
           color="grey"
-          _hover={{ color: "blue.500" }}
+          _hover={{ color: "blue" }}
           onClick={() => onClick(currentPage - 1)}
           cursor={currentPage > 1 ? "pointer" : "not-allowed"}
         />
@@ -51,8 +51,8 @@ export const HistoryPagination = ({ numPages, currentPage }) => {
             page <= numPages && (
               <Button
                 key={page.toString()}
-                background={currentPage === page ? "blue.500" : "grey"}
-                _hover={{ background: "blue.500" }}
+                background={currentPage === page ? "blue" : "grey"}
+                _hover={{ background: "blue" }}
                 color="white"
                 onClick={() => onClick(page)}
                 size="sm"
@@ -64,7 +64,7 @@ export const HistoryPagination = ({ numPages, currentPage }) => {
         <RightIcon
           boxSize={6}
           color="grey"
-          _hover={{ color: "blue.500" }}
+          _hover={{ color: "blue" }}
           onClick={() => onClick(currentPage + 1)}
           cursor={currentPage < numPages ? "pointer" : "not-allowed"}
         />

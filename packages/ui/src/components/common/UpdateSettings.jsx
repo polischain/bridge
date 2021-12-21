@@ -56,7 +56,7 @@ export const UpdateSettings = ({ close }) => {
       <Button
         variant="ghost"
         color="grey"
-        _hover={{ color: "blue.500", bgColor: "blackAlpha.100" }}
+        _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
         onClick={openSettings}
         leftIcon={<SettingsIcon />}
         px={2}

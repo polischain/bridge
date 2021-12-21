@@ -191,12 +191,12 @@ export const FromToken = () => {
             />
             <Button
               ml={2}
-              color="blue.500"
-              bg="blue.50"
+              color="blue"
+              bg="blue"
               size="sm"
               fontSize="sm"
               fontWeight="normal"
-              _hover={{ bg: "blue.100" }}
+              _hover={{ bg: "blue" }}
               onClick={() => {
                 const amountInput = utils.formatUnits(balance, token.decimals);
                 setAmount(amountInput);

@@ -48,7 +48,7 @@ export const LoadingModal = ({ loadingText }) => {
                   >
                     <Spinner
                       position="absolute"
-                      color="blue.500"
+                      color="blue"
                       thickness="5px"
                       h="3.25rem"
                       w="3.25rem"

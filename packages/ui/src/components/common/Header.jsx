@@ -22,7 +22,7 @@ const HistoryLink = ({ close }) => {
     <Button
       variant="ghost"
       color="grey"
-      _hover={{ color: "blue.500", bgColor: "blackAlpha.100" }}
+      _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
       onClick={() => {
         history.push("/history");
         close();
@@ -69,14 +69,14 @@ export const Header = () => {
         <Link to="/">
           <Flex justify="space-around" align="center">
             <Image src={Logo} mr={4} />
-            <Text fontWeight="bold">OmniBridge</Text>
+            <Text fontWeight="bold">Acheron</Text>
           </Flex>
         </Link>
         <Button
           variant="link"
           display={{ base: "block", md: "none" }}
-          color="blue.500"
-          _hover={{ color: "blue.600" }}
+          color="blue"
+          _hover={{ color: "blue" }}
           onClick={toggleOpen}
           minW="auto"
           p="2"

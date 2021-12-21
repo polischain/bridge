@@ -17,7 +17,7 @@ export const Footer = () => (
   >
     <div />
     <HStack spacing={4}>
-      <Box _hover={{ color: "blue.500" }} transition="0.25s">
+      <Box _hover={{ color: "blue" }} transition="0.25s">
         <a
           href="https://twitter.com/PolisChain"
           rel="noreferrer noopener"
@@ -26,7 +26,7 @@ export const Footer = () => (
           <TwitterIcon />
         </a>
       </Box>
-      <Box _hover={{ color: "blue.500" }} transition="0.25s">
+      <Box _hover={{ color: "blue" }} transition="0.25s">
         <a
           href="https://t.me/PolisPayOfficial"
           rel="noreferrer noopener"
@@ -35,7 +35,7 @@ export const Footer = () => (
           <TelegramIcon />
         </a>
       </Box>
-      <Box _hover={{ color: "blue.500" }} transition="0.25s">
+      <Box _hover={{ color: "blue" }} transition="0.25s">
         <a
           href="https://github.com/polischain"
           rel="noreferrer noopener"

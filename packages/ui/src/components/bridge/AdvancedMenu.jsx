@@ -70,14 +70,14 @@ export const AdvancedMenu = () => {
                 onClick={onClick}
                 color="grey"
                 transition="color 0.25s"
-                _hover={{ color: "blue.500", cursor: "pointer" }}
+                _hover={{ color: "blue", cursor: "pointer" }}
               />
             </InputRightElement>
           </InputGroup>
         ) : (
           <Button
             onClick={onClick}
-            color="blue.500"
+            color="blue"
             variant="ghost"
             h="2.5rem"
             fontWeight="normal"

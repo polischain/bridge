@@ -32,7 +32,7 @@ export const WalletSelector = ({ close }) => {
               px={{ base: 3, md: 2, lg: 3 }}
               height="2rem"
               fontSize="sm"
-              color="blue.500"
+              color="blue"
               fontWeight="600"
               ml={3}
             >

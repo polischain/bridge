@@ -46,7 +46,7 @@ export const BridgeDropdown = ({ close }) => {
         rightIcon={<DownArrowIcon boxSize="0.5rem" color="black" />}
         color="grey"
         bg="none"
-        _hover={{ color: "blue.500", bgColor: "blackAlpha.100" }}
+        _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
         p={2}
       >
         <Text color="black" textTransform="uppercase" fontSize="sm">

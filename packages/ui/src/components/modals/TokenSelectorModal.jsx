@@ -193,7 +193,7 @@ export const TokenSelectorModal = ({ isOpen, onClose, onCustom }) => {
             {loading && (
               <Flex w="100%" align="center" justify="center">
                 <Spinner
-                  color="blue.500"
+                  color="blue"
                   thickness="4px"
                   size="xl"
                   speed="0.75s"

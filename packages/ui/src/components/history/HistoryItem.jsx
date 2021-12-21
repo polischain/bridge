@@ -187,7 +187,7 @@ export const HistoryItem = ({
           </Text>
           {receivingTx ? (
             <Link
-              color="blue.500"
+              color="blue"
               href={`${getExplorerUrl(bridgeChainId)}/tx/${receivingTx}`}
               rel="noreferrer noopener"
               target="_blank"
@@ -221,11 +221,11 @@ export const HistoryItem = ({
         {claimed ? (
           <Flex align="center" justify={{ base: "center", md: "flex-end" }}>
             {failed ? (
-              <CloseIcon color="red.500" boxSize="0.75rem" pb="0.1rem" />
+              <CloseIcon color="red" boxSize="0.75rem" pb="0.1rem" />
             ) : (
-              <CheckIcon color="blue.500" boxSize="0.75rem" />
+              <CheckIcon color="blue" boxSize="0.75rem" />
             )}
-            <Text ml="0.25rem" color={failed ? "red.500" : "blue.500"}>
+            <Text ml="0.25rem" color={failed ? "red.500" : "blue"}>
               {failed ? "Failed" : "Claimed"}
             </Text>
           </Flex>

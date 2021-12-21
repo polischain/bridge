@@ -48,12 +48,12 @@ export const TermsOfServiceModal = () => {
             alignItems="center"
           >
             <Image src={InfoImage} mb={4} w="4rem" />
-            <Text>Welcome to the OmniBridge UI</Text>
+            <Text>Welcome to the Acheron</Text>
           </ModalHeader>
           <ModalBody px={8} py={0}>
             <Flex align="center" direction="column" fontSize="sm">
               <Text as="p" textAlign="center" mb="4">
-                We’re launching our OmniBridge and our UI App on a beta-testing
+                We’re launching our Acheron and our UI App on a beta-testing
                 basis. While we’ve worked long and hard to develop the core
                 features of the software, we expect that our users may detect
                 bugs and other issues. Help us improve by posting any
@@ -62,7 +62,7 @@ export const TermsOfServiceModal = () => {
                   as="a"
                   href="
               https://forum.poa.network/c/tokenbridge/tokenbridge-support/"
-                  color="blue.500"
+                  color="blue"
                   isExternal
                 >
                   support page
@@ -71,7 +71,7 @@ export const TermsOfServiceModal = () => {
               </Text>
               <Text as="p" textAlign="center" mb="4">
                 {
-                  "Use of this app and the OmniBridge is at your own risk. Users may experience unexpected delays, unexpected visual artifacts, unexpected loss of tokens or funds from improper app configuration, or other negative outcomes. "
+                  "Use of this app and the Acheron is at your own risk. Users may experience unexpected delays, unexpected visual artifacts, unexpected loss of tokens or funds from improper app configuration, or other negative outcomes. "
                 }
               </Text>
               <Text as="p" textAlign="center" mb="4">
@@ -81,7 +81,7 @@ export const TermsOfServiceModal = () => {
                 <Link
                   as="a"
                   href="https://forum.poa.network/t/end-user-licensing-agreement-and-terms-of-service/2197"
-                  color="blue.500"
+                  color="blue"
                   isExternal
                 >
                   Terms of Service

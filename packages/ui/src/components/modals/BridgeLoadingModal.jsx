@@ -74,7 +74,7 @@ const BridgeLoader = ({
                           position="absolute"
                           justify="center"
                           align="center"
-                          color="blue.500"
+                          color="blue"
                         >
                           <ProgressRing
                             radius={33.5}
@@ -86,10 +86,10 @@ const BridgeLoader = ({
                       </>
                     ) : (
                       <>
-                        <CheckIcon color="blue.500" boxSize="0.85rem" />
+                        <CheckIcon color="blue" boxSize="0.85rem" />
                         <Spinner
                           position="absolute"
-                          color="blue.500"
+                          color="blue"
                           thickness="5px"
                           w="3.25rem"
                           h="3.25rem"
