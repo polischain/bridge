@@ -206,7 +206,7 @@ export const ConfirmTransferModal = ({ isOpen, onClose }) => {
                 px={12}
                 onClick={onClick}
                 isDisabled={isSameAddress}
-                colorScheme="blue"
+                color="blue"
                 mt={{ base: 2, md: 0 }}
               >
                 Continue
