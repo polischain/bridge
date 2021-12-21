@@ -33,7 +33,7 @@ export const LARGEST_UINT256 = BigNumber.from(
 
 export const POLLING_INTERVAL = 5000;
 
-export const DEFAULT_BRIDGE_DIRECTION = POLIS_FANTOM_BRIDGE;
+export const DEFAULT_BRIDGE_DIRECTION = POLIS_IOTEX_BRIDGE;
 
 export const nativeCurrencies = {
   1: {
@@ -211,20 +211,6 @@ export const chainUrls = {
   },
 };
 
-export const defaultTokensUrl = {
-  1: "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/mainnet/mainnet.json",
-  56: "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/bsc/bsc.json",
-  137: "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/polygon/polygon.json",
-  250: "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/fantom/fantom.json",
-  4689: "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/iotex/iotex.json",
-  43114:
-    "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/avalanche/avalanche.json",
-  333999:
-    "https://raw.githubusercontent.com/polischain/bridge-ui/main/tokenlist/polis/polis.json",
-};
-
-export const GRAPH_HEALTH_ENDPOINT =
-  "https://api.thegraph.com/index-node/graphql";
 
 export const LOCAL_STORAGE_KEYS = {
   BRIDGE_DIRECTION: "bridge-direction",
