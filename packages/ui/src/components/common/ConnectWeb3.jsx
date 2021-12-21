@@ -107,12 +107,7 @@ export const ConnectWeb3 = () => {
           Disconnect
         </Button>
       ) : (
-        <Button
-          onClick={connectWeb3}
-          color="blue"
-          px={12}
-          isLoading={loading}
-        >
+        <Button onClick={connectWeb3} color="blue" px={12} isLoading={loading}>
           Connect
         </Button>
       )}

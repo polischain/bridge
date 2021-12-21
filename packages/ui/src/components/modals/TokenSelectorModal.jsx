@@ -17,7 +17,6 @@ import {
 import SearchIcon from "assets/search.svg";
 import { Logo } from "components/common/Logo";
 import { useBridgeContext } from "contexts/BridgeContext";
-import { useSettings } from "contexts/SettingsContext";
 import { useWeb3Context } from "contexts/Web3Context";
 import { useBridgeDirection } from "hooks/useBridgeDirection";
 import { ADDRESS_ZERO } from "lib/constants";
@@ -37,7 +36,6 @@ export const TokenSelectorModal = ({ isOpen, onClose, onCustom }) => {
   // Contexts
   const { setToken, setLoading: setBridgeLoading } = useBridgeContext();
   const { account, ethersProvider, providerChainId } = useWeb3Context();
-  const { disableBalanceFetchToken } = useSettings();
   // State
   const [loading, setLoading] = useState(true);
   const [tokenList, setTokenList] = useState([]);
@@ -192,12 +190,7 @@ export const TokenSelectorModal = ({ isOpen, onClose, onCustom }) => {
           <ModalBody minH="5rem">
             {loading && (
               <Flex w="100%" align="center" justify="center">
-                <Spinner
-                  color="blue"
-                  thickness="4px"
-                  size="xl"
-                  speed="0.75s"
-                />
+                <Spinner color="blue" thickness="4px" size="xl" speed="0.75s" />
               </Flex>
             )}
             {!loading &&
@@ -239,7 +232,7 @@ export const TokenSelectorModal = ({ isOpen, onClose, onCustom }) => {
                         overflow="hidden"
                         maxWidth="60%"
                       >
-                        {!disableBalanceFetchToken && balance && decimals
+                        {balance && decimals
                           ? formatValue(balance, decimals)
                           : name}
                       </Text>

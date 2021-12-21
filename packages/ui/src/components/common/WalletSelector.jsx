@@ -47,11 +47,7 @@ export const WalletSelector = ({ close }) => {
             boxShadow="0 0.5rem 1rem #CADAEF"
             p={4}
           >
-            <Flex
-              justify="space-between"
-              align="center"
-              direction="column"
-            >
+            <Flex justify="space-between" align="center" direction="column">
               <Text mb={{ base: 4, md: undefined }}>
                 Connected to {getNetworkName(providerChainId)}
               </Text>

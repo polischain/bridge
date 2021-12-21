@@ -31,7 +31,6 @@ export const BridgeTokens = () => {
       <Flex
         maxW="75rem"
         background="white"
-        boxShadow="0px 1rem 2rem rgba(204, 218, 238, 0.8)"
         borderRadius="1rem"
         direction="column"
         align="center"
@@ -70,9 +69,7 @@ export const BridgeTokens = () => {
               <Text color="greyText" fontSize="sm">
                 From
               </Text>
-              <Text fontWeight="bold" fontSize="lg">
-                {getNetworkName(chainId)}
-              </Text>
+              <Text fontSize="lg">{getNetworkName(chainId)}</Text>
             </Flex>
           )}
           <FromToken />
@@ -91,7 +88,7 @@ export const BridgeTokens = () => {
               <Text color="greyText" fontSize="sm">
                 To
               </Text>
-              <Text fontWeight="bold" fontSize="lg" textAlign="right">
+              <Text fontSize="lg" textAlign="right">
                 {getNetworkName(bridgeChainId)}
               </Text>
             </Flex>

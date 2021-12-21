@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import Logo from "assets/logo.svg";
 import { BridgeDropdown } from "components/common/BridgeDropdown";
-import { UpdateSettings } from "components/common/UpdateSettings";
 import { WalletSelector } from "components/common/WalletSelector";
 import { useWeb3Context } from "contexts/Web3Context";
 import { useBridgeDirection } from "hooks/useBridgeDirection";
@@ -31,9 +30,7 @@ const HistoryLink = ({ close }) => {
       px={2}
       fontSize="sm"
     >
-      <Text
-          color="white"
-      > History</Text>
+      <Text color="white"> History</Text>
     </Button>
   );
 };
@@ -71,7 +68,9 @@ export const Header = () => {
         <Link to="/">
           <Flex justify="space-around" align="center">
             <Image src={Logo} mr={4} />
-            <Text fontWeight="bold" color="white">ACHERON</Text>
+            <Text fontWeight="bold" color="white">
+              ACHERON
+            </Text>
           </Flex>
         </Link>
         <Button
@@ -115,7 +114,6 @@ export const Header = () => {
         {valid && (
           <>
             <HistoryLink close={() => setOpen(false)} />
-            <UpdateSettings close={() => setOpen(false)} />
           </>
         )}
         <WalletSelector close={() => setOpen(false)} />

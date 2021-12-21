@@ -6,6 +6,9 @@ export const theme = {
     ...chakraTheme.styles,
     global: {
       ...chakraTheme.styles.global,
+      body: {
+        fontFamily: "Montserrat, sans-serif",
+      },
     },
   },
   breakpoints: {
@@ -25,8 +28,6 @@ export const theme = {
     modalOpaqueBG: "rgba(98, 118, 148, 1)",
   },
   fonts: {
-    ...chakraTheme.fonts,
     body: "Montserrat, sans-serif",
-    color: "#fff",
   },
 };

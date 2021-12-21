@@ -48,30 +48,13 @@ export const TermsOfServiceModal = () => {
             alignItems="center"
           >
             <Image src={InfoImage} mb={4} w="4rem" />
-            <Text>Welcome to the Acheron</Text>
+            <Text>Welcome to Acheron</Text>
           </ModalHeader>
           <ModalBody px={8} py={0}>
             <Flex align="center" direction="column" fontSize="sm">
               <Text as="p" textAlign="center" mb="4">
-                We’re launching our Acheron and our UI App on a beta-testing
-                basis. While we’ve worked long and hard to develop the core
-                features of the software, we expect that our users may detect
-                bugs and other issues. Help us improve by posting any
-                difficulties to our{" "}
-                <Link
-                  as="a"
-                  href="
-              https://forum.poa.network/c/tokenbridge/tokenbridge-support/"
-                  color="blue"
-                  isExternal
-                >
-                  support page
-                </Link>
-                .
-              </Text>
-              <Text as="p" textAlign="center" mb="4">
                 {
-                  "Use of this app and the Acheron is at your own risk. Users may experience unexpected delays, unexpected visual artifacts, unexpected loss of tokens or funds from improper app configuration, or other negative outcomes. "
+                  "Use of this app and the Acheron Bridge is at your own risk. Users may experience unexpected delays, unexpected visual artifacts, unexpected loss of tokens or funds from improper app configuration, or other negative outcomes. "
                 }
               </Text>
               <Text as="p" textAlign="center" mb="4">
@@ -92,7 +75,7 @@ export const TermsOfServiceModal = () => {
           </ModalBody>
           <ModalFooter>
             <Flex justify="center" align="center" w="100%">
-              <Button onClick={onClose} colorScheme="blue" px="3rem">
+              <Button onClick={onClose} color="blue" px="3rem">
                 Continue
               </Button>
             </Flex>

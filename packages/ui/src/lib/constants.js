@@ -225,10 +225,6 @@ export const GRAPH_HEALTH_ENDPOINT =
   "https://api.thegraph.com/index-node/graphql";
 
 export const LOCAL_STORAGE_KEYS = {
-  DONT_SHOW_CLAIMS: "dont-show-claims",
-  NEVER_SHOW_CLAIMS: "never-show-claims",
-  INFINITE_UNLOCK: "infinite-unlock",
-  DISABLE_BALANCE_WHILE_TOKEN_FETCH: "disable-balance-while-token-fetch",
   BRIDGE_DIRECTION: "bridge-direction",
   MAINNET_RPC_URL: "mainnet-rpc-url",
   FTM_RPC_URL: "ftm-rpc-url",

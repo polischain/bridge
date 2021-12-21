@@ -15,7 +15,6 @@ import { ClaimTokensModal } from "components/modals/ClaimTokensModal";
 import { ClaimTransferModal } from "components/modals/ClaimTransferModal";
 import { NeedsConfirmationModal } from "components/modals/NeedsConfirmationModal";
 import { useBridgeContext } from "contexts/BridgeContext";
-import { useSettings } from "contexts/SettingsContext";
 import { useWeb3Context } from "contexts/Web3Context";
 import { useBridgeDirection } from "hooks/useBridgeDirection";
 import { useTransactionStatus } from "hooks/useTransactionStatus";
@@ -44,7 +43,6 @@ const BridgeLoader = ({
         <>
           {loadingText ? (
             <ModalContent
-              boxShadow="0px 1rem 2rem #617492"
               borderRadius={{ base: "1rem", md: "full" }}
               mx={{ base: 12, lg: 0 }}
               maxW={{ base: "20rem", md: "25rem" }}
@@ -146,7 +144,6 @@ export const BridgeLoadingModal = () => {
     }
   }, [chainId, homeChainId]);
 
-  const { neverShowClaims, needsSaving } = useSettings();
   const txNeedsClaiming =
     !!message && !!txHash && !loading && chainId === foreignChainId;
 
@@ -155,11 +152,7 @@ export const BridgeLoadingModal = () => {
   ) : null;
 
   const claimAllTokens =
-    txNeedsClaiming ||
-    neverShowClaims ||
-    needsSaving ||
-    loading ||
-    needsConfirmation ? null : (
+    txNeedsClaiming || loading || needsConfirmation ? null : (
       <ClaimTokensModal />
     );
 
