@@ -94,12 +94,12 @@ export const TransferButton = () => {
       as="button"
       align="center"
       mt={{ base: 2, md: 2, lg: 3 }}
-      color={needsClaiming ? "purple.300" : "blue"}
+      color="blue"
       _hover={
         !buttonEnabled
           ? undefined
           : {
-              color: needsClaiming ? "purple.400" : "blue",
+              color: "blue",
             }
       }
       cursor={!buttonEnabled ? "not-allowed" : "pointer"}

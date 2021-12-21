@@ -55,14 +55,14 @@ export const UpdateSettings = ({ close }) => {
     <>
       <Button
         variant="ghost"
-        color="grey"
+        color="white"
         _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
         onClick={openSettings}
         leftIcon={<SettingsIcon />}
         px={2}
         fontSize="sm"
       >
-        <Text color="black">Settings</Text>
+        <Text color="white">Settings</Text>
       </Button>
       <Modal
         isOpen={isOpen}

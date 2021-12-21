@@ -191,7 +191,7 @@ export const FromToken = () => {
             />
             <Button
               ml={2}
-              color="blue"
+              color="white"
               bg="blue"
               size="sm"
               fontSize="sm"

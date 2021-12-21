@@ -21,8 +21,8 @@ const HistoryLink = ({ close }) => {
   return (
     <Button
       variant="ghost"
-      color="grey"
-      _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
+      color="white"
+      _hover={{ color: "blue", bgColor: "blackAlpha.50" }}
       onClick={() => {
         history.push("/history");
         close();
@@ -31,7 +31,9 @@ const HistoryLink = ({ close }) => {
       px={2}
       fontSize="sm"
     >
-      <Text color="black"> History</Text>
+      <Text
+          color="white"
+      > History</Text>
     </Button>
   );
 };
@@ -69,7 +71,7 @@ export const Header = () => {
         <Link to="/">
           <Flex justify="space-around" align="center">
             <Image src={Logo} mr={4} />
-            <Text fontWeight="bold">Acheron</Text>
+            <Text fontWeight="bold" color="white">ACHERON</Text>
           </Flex>
         </Link>
         <Button

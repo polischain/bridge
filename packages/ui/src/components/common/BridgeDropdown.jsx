@@ -43,13 +43,13 @@ export const BridgeDropdown = ({ close }) => {
       <MenuButton
         as={Button}
         leftIcon={<NetworkIcon />}
-        rightIcon={<DownArrowIcon boxSize="0.5rem" color="black" />}
-        color="grey"
+        rightIcon={<DownArrowIcon boxSize="0.5rem" color="white" />}
+        color="white"
         bg="none"
         _hover={{ color: "blue", bgColor: "blackAlpha.100" }}
         p={2}
       >
-        <Text color="black" textTransform="uppercase" fontSize="sm">
+        <Text color="white" textTransform="uppercase" fontSize="sm">
           {networks[currentBridgeDirection].label}
         </Text>
       </MenuButton>

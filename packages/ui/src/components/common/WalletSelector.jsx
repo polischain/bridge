@@ -51,13 +51,12 @@ export const WalletSelector = ({ close }) => {
               justify="space-between"
               align="center"
               direction="column"
-              fontWeight="bold"
             >
               <Text mb={{ base: 4, md: undefined }}>
                 Connected to {getNetworkName(providerChainId)}
               </Text>
               <Button
-                colorScheme="blue"
+                color="blue"
                 onClick={() => {
                   disconnect();
                   close();
