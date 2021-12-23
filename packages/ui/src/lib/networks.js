@@ -1,4 +1,5 @@
 import {
+  nativeCurrencies,
   POLIS_AVALANCHE_BRIDGE,
   POLIS_BSC_BRIDGE,
   POLIS_FANTOM_BRIDGE,
@@ -50,6 +51,7 @@ const POLIS_BSC_BRIDGE_CONFIG = {
   claimDisabled: false,
   tokensClaimDisabled: [],
 };
+
 const POLIS_MAINNET_BRIDGE_CONFIG = {
   label: "polis / eth",
   homeChainId: 333999,
@@ -67,6 +69,7 @@ const POLIS_MAINNET_BRIDGE_CONFIG = {
   claimDisabled: false,
   tokensClaimDisabled: [],
 };
+
 const POLIS_POLYGON_BRIDGE_CONFIG = {
   label: "polis / polygon",
   homeChainId: 333999,
@@ -99,7 +102,7 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   homeAmbAddress: "0xf86EFED732234882A39Ee13e0A6B9e5253d86AB9".toLowerCase(),
   foreignGraphName: "polischain/polis-to-iotex-bridge",
   homeGraphName: "polischain/iotex-to-polis-bridge",
-  claimDisabled: false,
+  claimDisabled: true,
   tokensClaimDisabled: [],
 };
 const POLIS_FANTOM_BRIDGE_CONFIG = {
@@ -121,7 +124,7 @@ const POLIS_FANTOM_BRIDGE_CONFIG = {
 };
 
 const ENABLED_BRIDGES = [
-  POLIS_MAINNET_BRIDGE,
+  POLIS_BSC_BRIDGE,
   POLIS_IOTEX_BRIDGE,
 ].map((b) => b.toLowerCase());
 
@@ -144,32 +147,22 @@ const getNetworkConfig = (bridges) => {
 export const networks = getNetworkConfig(ENABLED_BRIDGES);
 
 export const defaultTokens = {
-  [POLIS_FANTOM_BRIDGE]: {
-    250: {
-      address: "0xc8cc8371e0b0e02f53d6f96ea35f0a9a627c16e0",
-      chainId: 250,
-      symbol: "SOUL",
-      name: "Soul on Fantom",
-    },
+  [POLIS_BSC_BRIDGE]: {
+    56: nativeCurrencies[56],
     333999: {
-      address: "0xf1498e8103359fD96c5E08fb34b4C249B619025a",
+      address: "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E",
       chainId: 333999,
-      symbol: "SOUL",
-      name: "SoulToken",
+      symbol: "WBNB",
+      name: "Wrapped BNB from BSC",
     },
   },
   [POLIS_IOTEX_BRIDGE]: {
-    4689: {
-      address: "0xb8744ae4032be5e5ef9fab94ee9c3bf38d5d2ae0",
-      chainId: 4689,
-      symbol: "SOUL",
-      name: "Space Token on Polis on IoTeX",
-    },
+    4689: nativeCurrencies[4689],
     333999: {
-      address: "0x92C4af3113c7A49b131aD4EB0BC3cDDa0Fdf81cE",
+      address: "0xB2c97E7BD98490Fe6D6134F593E74008B5ECD9F4",
       chainId: 333999,
-      symbol: "SPACE",
-      name: "Space Token on Polis",
+      symbol: "WIOTEX",
+      name: "Wrapped IoTeX from IoTeX",
     },
   },
 };

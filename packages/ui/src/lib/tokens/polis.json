@@ -14,6 +14,30 @@
       "symbol": "SOUL",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/hadeswap/assets/master/blockchains/olympus/assets/0xf1498e8103359fD96c5E08fb34b4C249B619025a/logo.png"
+    },
+    {
+      "address": "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E",
+      "chainId": 333999,
+      "name": "Wrapped BNB from BSC",
+      "symbol": "WBNB",
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png"
+    },
+    {
+      "address": "0x5DF748dD4C0acf81a1a943EB52a0d0325b4d3B94",
+      "chainId": 333999,
+      "name": "Wrapped IoTeX from IoTeX",
+      "symbol": "WIOTEX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/iotex/info/logo.png"
+    },
+    {
+      "address": "0x92C4af3113c7A49b131aD4EB0BC3cDDa0Fdf81cE",
+      "chainId": 333999,
+      "name": "Space Token on Polis",
+      "symbol": "SPACE",
+      "decimals": 18,
+      "logoURI": ""
     }
   ]
 }

@@ -84,7 +84,7 @@ export const ClaimTokensModal = () => {
               >
                 <Button
                   px={12}
-                  colorScheme="blue"
+                  color="blue"
                   mt={{ base: 2, md: 0 }}
                   w="100%"
                 >

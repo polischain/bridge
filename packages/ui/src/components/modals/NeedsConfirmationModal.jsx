@@ -67,7 +67,7 @@ export const NeedsConfirmationModal = ({
               <Flex align="center" direction="column" w="100%" mt="4" mb="6">
                 <Alert status="info" borderRadius={5}>
                   <AlertIcon minWidth="20px" />
-                  <Text fontSize="small">
+                  <Text fontSize="small" color="white">
                     After you switch networks, you will complete a second
                     transaction on {getNetworkName(foreignChainId)} to claim
                     your {toUnit} tokens.

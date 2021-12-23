@@ -127,7 +127,7 @@ export const ClaimTransferModal = ({ message, setMessage }) => {
               <Flex align="center" direction="column" w="100%">
                 <Alert status="info" borderRadius={5}>
                   <AlertIcon minWidth="20px" />
-                  <Text fontSize="small">
+                  <Text fontSize="small" color="white">
                     {`The claim process may take a variable period of time on ${getNetworkName(
                       foreignChainId
                     )}${" "}
@@ -168,7 +168,7 @@ export const ClaimTransferModal = ({ message, setMessage }) => {
               <Button
                 px={12}
                 onClick={claimTokens}
-                colorScheme="blue"
+                color="blue"
                 mt={{ base: 2, md: 0 }}
                 isLoading={claiming || executing}
                 isDisabled={executed}

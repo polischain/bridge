@@ -84,12 +84,12 @@ export const nativeCurrencies = {
     chainId: 4689,
     decimals: 18,
     logoURI: IOTEX_CURRENCY_LOGO,
-    name: "Iotex",
+    name: "IoTeX",
     address: ADDRESS_ZERO,
     symbol: "IOTEX",
     mode: "NATIVE",
     homeTokenAddress:
-      "0xB2c97E7BD98490Fe6D6134F593E74008B5ECD9F4".toLowerCase(),
+      "0x5DF748dD4C0acf81a1a943EB52a0d0325b4d3B94".toLowerCase(),
   },
   43114: {
     chainId: 43114,
@@ -118,7 +118,7 @@ export const networkNames = {
   56: "Binance Smart Chain",
   137: "Polygon",
   250: "Fantom Opera",
-  4689: "Iotex",
+  4689: "IoTeX",
   43114: "Avalanche C chain",
   333999: "Polis Olympus Chain",
 };
@@ -128,7 +128,7 @@ export const networkLabels = {
   56: "BSC",
   137: "Polygon",
   250: "Fantom",
-  4689: "Iotex",
+  4689: "IoTeX",
   43114: "Avalanche",
   333999: "Polis",
 };
@@ -151,7 +151,7 @@ export const networkCurrencies = {
     symbol: "FTM",
   },
   4689: {
-    name: "Iotex",
+    name: "IoTeX",
     symbol: "IOTEX",
   },
   43114: {
@@ -166,7 +166,7 @@ export const networkCurrencies = {
 
 export const chainUrls = {
   1: {
-    rpc: process.env.REACT_APP_MAINNET_RPC_URL.split(),
+    rpc: ["https://main-light.eth.linkpool.io/"],
     explorer: "https://etherscan.io",
     chainId: 1,
     name: networkNames[1],
