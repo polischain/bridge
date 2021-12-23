@@ -233,7 +233,7 @@ export const HistoryItem = ({
             <Button
               w="100%"
               size="sm"
-              colorScheme="blue"
+              color="blue"
               onClick={claimTokens}
               isLoading={claiming || executing}
             >

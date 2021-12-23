@@ -36,9 +36,9 @@ const POLIS_MAINNET_BRIDGE_CONFIG = {
   enableReversedBridge: true,
   enableForeignCurrencyBridge: true,
   foreignMediatorAddress:
-    "0x4f7488D150eA5295d20c8f0E3524b7897b1b7021".toLowerCase(),
+    "0x1A44a4c868D04E63b1823A98114580E067c29c97".toLowerCase(),
   homeMediatorAddress:
-    "0x96ba6eFcF8c12547fd4a069370602904D50e4d34".toLowerCase(),
+    "0xfc92b2DF91c8F6E6ECcBB75b45F21c359614cC87".toLowerCase(),
   foreignAmbAddress: "0x5172747f21EE6D4065CE9a36691D3b579bfCDf20".toLowerCase(),
   homeAmbAddress: "0x651581b964A22bCE9eAfCE0a762189d2D04cAe6a".toLowerCase(),
   foreignGraphName: "polischain/polis-to-mainnet",

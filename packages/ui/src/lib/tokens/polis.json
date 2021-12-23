@@ -30,46 +30,6 @@
       "symbol": "WIOTEX",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/iotex/info/logo.png"
-    },
-    {
-      "address": "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E",
-      "chainId": 333999,
-      "name": "Wrapped ETH from Mainnet",
-      "symbol": "WETH",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png"
-    },
-    {
-      "address": "0x92C4af3113c7A49b131aD4EB0BC3cDDa0Fdf81cE",
-      "chainId": 333999,
-      "name": "Space Token on Polis",
-      "symbol": "SPACE",
-      "decimals": 18,
-      "logoURI": ""
-    },
-    {
-      "address": "0x3ED19C9bA8cFa5155D934a6CA7c04f264D9E9D78",
-      "chainId": 333999,
-      "name": "Dai Stablecoin on Polis",
-      "symbol": "DAI",
-      "decimals": 18,
-      "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
-    },
-    {
-      "address": "0x53a37E1f7b9fb3d71bD29AE826f43158649Af667",
-      "chainId": 333999,
-      "name": "Tether USD on Polis",
-      "symbol": "USDT",
-      "decimals": 18,
-      "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
-    },
-    {
-      "address": "0x213356AEa13930DfAd7E99d4431d59d4EA0cc084",
-      "chainId": 333999,
-      "name": "USDC on Polis",
-      "symbol": "USDC",
-      "decimals": 18,
-      "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
     }
   ]
 }
