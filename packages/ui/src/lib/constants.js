@@ -100,7 +100,7 @@ export const networkCurrencies = {
 
 export const chainUrls = {
   1: {
-    rpc: ["https://main-light.eth.linkpool.io/"],
+    rpc: ["https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet"],
     explorer: "https://etherscan.io",
     chainId: 1,
     name: networkNames[1],
