@@ -21,7 +21,7 @@ export const LARGEST_UINT256 = BigNumber.from(
 
 export const POLLING_INTERVAL = 5000;
 
-export const DEFAULT_BRIDGE_DIRECTION = POLIS_BSC_BRIDGE;
+export const DEFAULT_BRIDGE_DIRECTION = POLIS_IOTEX_BRIDGE;
 
 export const nativeCurrencies = {
   1: {

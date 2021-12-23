@@ -61,7 +61,7 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   tokensClaimDisabled: [],
 };
 
-const ENABLED_BRIDGES = [POLIS_BSC_BRIDGE, POLIS_IOTEX_BRIDGE].map((b) =>
+const ENABLED_BRIDGES = [POLIS_MAINNET_BRIDGE, POLIS_IOTEX_BRIDGE].map((b) =>
   b.toLowerCase()
 );
 
