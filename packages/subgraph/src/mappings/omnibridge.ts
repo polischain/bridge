@@ -103,12 +103,18 @@ export function handleNewToken(event: NewTokenRegistered): void {
     token.foreignChainId = 1;
     token.homeName = tokenObject.name;
     token.foreignName = tokenObject.name.slice(0, -8);
-  } else if (network == "avalanche" && direction.toString() == "polis-avalanche") {
+  } else if (
+    network == "avalanche" &&
+    direction.toString() == "polis-avalanche"
+  ) {
     token.homeChainId = 43114;
     token.foreignChainId = 333999;
     token.homeName = tokenObject.name;
     token.foreignName = tokenObject.name.slice(0, -8);
-  } else if (network == "olympus" && direction.toString() == "polis-avalanche") {
+  } else if (
+    network == "olympus" &&
+    direction.toString() == "polis-avalanche"
+  ) {
     token.homeChainId = 333999;
     token.foreignChainId = 43114;
     token.homeName = tokenObject.name;

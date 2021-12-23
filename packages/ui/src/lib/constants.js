@@ -109,7 +109,7 @@ export const nativeCurrencyMediators = {
   56: "0x7d5d0ba109a6b9f6dde7d2a89a8150b589d49504".toLowerCase(),
   137: "0x594e8e761c509101decd0953dbfebd2f73cb075a".toLowerCase(),
   250: "0xB771bA1483Eb9aC628a7E81af060Aed52cE74A53".toLowerCase(),
-  4689: "0x37475F044DE2437fC60F664d85AE0232d00695D1".toLowerCase(),
+  4689: "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558".toLowerCase(),
   43114: "0x37475F044DE2437fC60F664d85AE0232d00695D1".toLowerCase(),
 };
 
@@ -166,15 +166,13 @@ export const networkCurrencies = {
 
 export const chainUrls = {
   1: {
-    rpc: "https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet  https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet/archive".split(),
+    rpc: process.env.REACT_APP_MAINNET_RPC_URL.split(),
     explorer: "https://etherscan.io",
     chainId: 1,
     name: networkNames[1],
   },
   56: {
-    rpc: "https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/bsc/mainnet https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/bsc/mainnet/archive".split(
-      " "
-    ),
+    rpc: process.env.REACT_APP_BSC_RPC_URL.split(" "),
     explorer: "https://bscscan.com",
     chainId: 56,
     name: networkNames[56],

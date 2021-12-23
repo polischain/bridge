@@ -92,11 +92,11 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   enableReversedBridge: true,
   enableForeignCurrencyBridge: true,
   foreignMediatorAddress:
-    "0x18a5D68BA3Ad47405CC2fFCB0C57E47A519C140a".toLowerCase(),
+    "0xE472D737424809898F3d508464671C57D7d392b4".toLowerCase(),
   homeMediatorAddress:
-    "0x9308B28A0bcCA5645DA0C3C15732871432ab646d".toLowerCase(),
-  foreignAmbAddress: "0xB632A2c05A1880da0a870FD5BDD650059F3A0383".toLowerCase(),
-  homeAmbAddress: "0xC150C423A9624b7ae40749d63B869c2B9e968a96".toLowerCase(),
+    "0x9E397A9886cec70634689e01e7345ce5a8361bFe".toLowerCase(),
+  foreignAmbAddress: "0x5F05B526a5226A8270b078c3569EEb4e95a66a28".toLowerCase(),
+  homeAmbAddress: "0xf86EFED732234882A39Ee13e0A6B9e5253d86AB9".toLowerCase(),
   foreignGraphName: "polischain/polis-to-iotex-bridge",
   homeGraphName: "polischain/iotex-to-polis-bridge",
   claimDisabled: false,
