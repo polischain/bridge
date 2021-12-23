@@ -1,39 +1,16 @@
 import {
   nativeCurrencies,
-  POLIS_AVALANCHE_BRIDGE,
   POLIS_BSC_BRIDGE,
-  POLIS_FANTOM_BRIDGE,
   POLIS_IOTEX_BRIDGE,
   POLIS_MAINNET_BRIDGE,
-  POLIS_POLYGON_BRIDGE,
 } from "lib/constants";
 
 export {
-  POLIS_AVALANCHE_BRIDGE,
   POLIS_BSC_BRIDGE,
-  POLIS_FANTOM_BRIDGE,
   POLIS_IOTEX_BRIDGE,
   POLIS_MAINNET_BRIDGE,
-  POLIS_POLYGON_BRIDGE,
 };
 
-const POLIS_AVALANCHE_BRIDGE_CONFIG = {
-  label: "polis / avalanche",
-  homeChainId: 333999,
-  foreignChainId: 43114,
-  enableReversedBridge: true,
-  enableForeignCurrencyBridge: true,
-  foreignMediatorAddress:
-    "0xfB59876201405Aee8D8aDa645b168AFEdb442F76".toLowerCase(),
-  homeMediatorAddress:
-    "0xfB59876201405Aee8D8aDa645b168AFEdb442F76".toLowerCase(),
-  foreignAmbAddress: "0xd66650Db783296918d11EdaE2FA6F191e9F7f884".toLowerCase(),
-  homeAmbAddress: "0xd66650Db783296918d11EdaE2FA6F191e9F7f884".toLowerCase(),
-  foreignGraphName: "mrwh0/polistoavalance",
-  homeGraphName: "polischain/avalanche-to-polis-bridge",
-  claimDisabled: false,
-  tokensClaimDisabled: [],
-};
 const POLIS_BSC_BRIDGE_CONFIG = {
   label: "polis / bsc",
   homeChainId: 333999,
@@ -70,24 +47,6 @@ const POLIS_MAINNET_BRIDGE_CONFIG = {
   tokensClaimDisabled: [],
 };
 
-const POLIS_POLYGON_BRIDGE_CONFIG = {
-  label: "polis / polygon",
-  homeChainId: 333999,
-  foreignChainId: 137,
-  enableReversedBridge: true,
-  enableForeignCurrencyBridge: true,
-  foreignMediatorAddress:
-    "0xDA4Afcd8c7305AbedEb676768b04D29412d60eFB".toLowerCase(),
-  homeMediatorAddress:
-    "0x0306BcA3Ea988112acf420aA58EBAbA40040A1Fd".toLowerCase(),
-  foreignAmbAddress: "0x5F05B526a5226A8270b078c3569EEb4e95a66a28".toLowerCase(),
-  homeAmbAddress: "0xa85f128B9cb883AaC4DF5272f206890D623EC2f8".toLowerCase(),
-  foreignGraphName: "polischain/polis-to-polygon-bridge",
-  homeGraphName: "polischain/polygon-to-polis-bridge",
-  claimDisabled: false,
-  tokensClaimDisabled: [],
-};
-
 const POLIS_IOTEX_BRIDGE_CONFIG = {
   label: "polis / iotex",
   homeChainId: 333999,
@@ -105,33 +64,14 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   claimDisabled: true,
   tokensClaimDisabled: [],
 };
-const POLIS_FANTOM_BRIDGE_CONFIG = {
-  label: "polis / fantom",
-  homeChainId: 333999,
-  foreignChainId: 250,
-  enableReversedBridge: true,
-  enableForeignCurrencyBridge: true,
-  foreignMediatorAddress:
-    "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558".toLowerCase(),
-  homeMediatorAddress:
-    "0x26f898A29CD9Ea4c327037547DF6FA7E2967b8D6".toLowerCase(),
-  foreignAmbAddress: "0xF34029CD8A376f30d65Bf8f71C3bBFA01Fab91a3".toLowerCase(),
-  homeAmbAddress: "0x9411446287A9DE0Fc02B8bB0201E3d401d7615F4".toLowerCase(),
-  foreignGraphName: "polischain/polis-to-fantom-bridge",
-  homeGraphName: "polischain/fantom-to-polis-bridge",
-  claimDisabled: false,
-  tokensClaimDisabled: [],
-};
 
 const ENABLED_BRIDGES = [
+  POLIS_MAINNET_BRIDGE,
   POLIS_BSC_BRIDGE,
   POLIS_IOTEX_BRIDGE,
 ].map((b) => b.toLowerCase());
 
 const bridgeInfo = {
-  [POLIS_FANTOM_BRIDGE]: POLIS_FANTOM_BRIDGE_CONFIG,
-  [POLIS_POLYGON_BRIDGE]: POLIS_POLYGON_BRIDGE_CONFIG,
-  [POLIS_AVALANCHE_BRIDGE]: POLIS_AVALANCHE_BRIDGE_CONFIG,
   [POLIS_MAINNET_BRIDGE]: POLIS_MAINNET_BRIDGE_CONFIG,
   [POLIS_BSC_BRIDGE]: POLIS_BSC_BRIDGE_CONFIG,
   [POLIS_IOTEX_BRIDGE]: POLIS_IOTEX_BRIDGE_CONFIG,
@@ -147,6 +87,15 @@ const getNetworkConfig = (bridges) => {
 export const networks = getNetworkConfig(ENABLED_BRIDGES);
 
 export const defaultTokens = {
+  [POLIS_MAINNET_BRIDGE]: {
+    1: nativeCurrencies[1],
+    333999: {
+      address: "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E",
+      chainId: 333999,
+      symbol: "WETH",
+      name: "Wrapped ETH from Mainnet",
+    },
+  },
   [POLIS_BSC_BRIDGE]: {
     56: nativeCurrencies[56],
     333999: {

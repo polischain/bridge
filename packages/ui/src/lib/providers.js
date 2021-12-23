@@ -3,10 +3,12 @@ import memoize from "fast-memoize";
 import { LOCAL_STORAGE_KEYS } from "lib/constants";
 import { getNetworkLabel, getRPCUrl, logError } from "lib/helpers";
 
-const { POLIS_RPC_URL, FTM_RPC_URL } = LOCAL_STORAGE_KEYS;
+const { MAINNET_RPC_URL, FTM_RPC_URL, IOTEX_RPC_URL, POLIS_RPC_URL  } = LOCAL_STORAGE_KEYS;
 
 const RPC_URL = {
+  1: MAINNET_RPC_URL,
   250: FTM_RPC_URL,
+  4689: IOTEX_RPC_URL,
   333999: POLIS_RPC_URL,
 };
 
@@ -49,9 +51,3 @@ export const getEthersProvider = async (chainId) => {
   sessionStorage.setItem(sessionHealthyURL, provider.connection.url);
   return provider || null;
 };
-
-export const isEIP1193 = (ethersProvider) =>
-  ethersProvider &&
-  ethersProvider.connection &&
-  ethersProvider.connection.url &&
-  ethersProvider.connection.url.includes("eip-1193");

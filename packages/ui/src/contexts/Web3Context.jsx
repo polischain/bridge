@@ -2,7 +2,6 @@ import { SafeAppWeb3Modal as Web3Modal } from "@gnosis.pm/safe-apps-web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { ethers } from "ethers";
 import {
-  getNetworkName,
   getRPCUrl,
   getWalletProviderName,
   logError,
@@ -18,26 +17,11 @@ import React, {
 export const Web3Context = React.createContext({});
 export const useWeb3Context = () => useContext(Web3Context);
 
-const updateTitle = (chainId) => {
-  const networkName = getNetworkName(chainId);
-  const defaultTitle = "Acheron";
-  if (!process.env.REACT_APP_TITLE) {
-    document.title = defaultTitle;
-  } else {
-    const titleReplaceString = "%c";
-    const appTitle = process.env.REACT_APP_TITLE || defaultTitle;
-
-    if (appTitle.indexOf(titleReplaceString) !== -1) {
-      document.title = appTitle.replace(titleReplaceString, networkName);
-    } else {
-      document.title = appTitle;
-    }
-  }
-};
-
 const rpc = {
+  1: getRPCUrl(1),
+  56: getRPCUrl(56),
+  4689: getRPCUrl(4689),
   333999: getRPCUrl(333999),
-  250: getRPCUrl(250),
 };
 
 const providerOptions = {
@@ -84,12 +68,6 @@ export const Web3Provider = ({ children }) => {
       logError({ web3ModalError: error });
     }
   }, []);
-
-  useEffect(() => {
-    if (providerChainId) {
-      updateTitle(providerChainId);
-    }
-  }, [providerChainId]);
 
   const disconnect = useCallback(async () => {
     web3Modal.clearCachedProvider();

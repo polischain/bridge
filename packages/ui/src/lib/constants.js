@@ -1,11 +1,8 @@
 import { BigNumber } from "ethers";
 
-export const POLIS_AVALANCHE_BRIDGE = "polis-avalanche";
 export const POLIS_BSC_BRIDGE = "polis-bsc";
-export const POLIS_FANTOM_BRIDGE = "polis-fantom";
 export const POLIS_IOTEX_BRIDGE = "polis-iotex";
 export const POLIS_MAINNET_BRIDGE = "polis-mainnet";
-export const POLIS_POLYGON_BRIDGE = "polis-polygon";
 
 export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
 
@@ -14,15 +11,6 @@ export const ETHEREUM_CURRENCY_LOGO =
 
 export const BNB_CURRENCY_LOGO =
   "https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png";
-
-export const FTM_CURRENCY_LOGO =
-  "https://s2.coinmarketcap.com/static/img/coins/64x64/3513.png";
-
-export const POLYGON_CURRENCY_LOGO =
-  "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png";
-
-export const AVALANCHE_CURRENCY_LOGO =
-  "https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png";
 
 export const IOTEX_CURRENCY_LOGO =
   "https://s2.coinmarketcap.com/static/img/coins/64x64/2777.png";
@@ -58,28 +46,6 @@ export const nativeCurrencies = {
     homeTokenAddress:
       "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E".toLowerCase(),
   },
-  137: {
-    chainId: 137,
-    decimals: 18,
-    logoURI: POLYGON_CURRENCY_LOGO,
-    name: "Polygon",
-    address: ADDRESS_ZERO,
-    symbol: "MATIC",
-    mode: "NATIVE",
-    homeTokenAddress:
-      "0xD045aC01FFB46d42ba923b9E7866F5e3519e6723".toLowerCase(),
-  },
-  250: {
-    chainId: 250,
-    decimals: 18,
-    logoURI: FTM_CURRENCY_LOGO,
-    name: "Fantom",
-    address: ADDRESS_ZERO,
-    symbol: "FTM",
-    mode: "NATIVE",
-    homeTokenAddress:
-      "0x03C7A86e14e9BC71d84A4DBe6352b1561402e29C".toLowerCase(),
-  },
   4689: {
     chainId: 4689,
     decimals: 18,
@@ -91,45 +57,25 @@ export const nativeCurrencies = {
     homeTokenAddress:
       "0x5DF748dD4C0acf81a1a943EB52a0d0325b4d3B94".toLowerCase(),
   },
-  43114: {
-    chainId: 43114,
-    decimals: 18,
-    logoURI: AVALANCHE_CURRENCY_LOGO,
-    name: "Avalanche",
-    address: ADDRESS_ZERO,
-    symbol: "AVAX",
-    mode: "NATIVE",
-    homeTokenAddress:
-      "0x3126cadD2d364612E49B4c7779116037EF9fCe91".toLowerCase(),
-  },
 };
 
 export const nativeCurrencyMediators = {
   1: "0xa05924cbd2a8434b3993394b9bed122583a783ad".toLowerCase(),
   56: "0x7d5d0ba109a6b9f6dde7d2a89a8150b589d49504".toLowerCase(),
-  137: "0x594e8e761c509101decd0953dbfebd2f73cb075a".toLowerCase(),
-  250: "0xB771bA1483Eb9aC628a7E81af060Aed52cE74A53".toLowerCase(),
   4689: "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558".toLowerCase(),
-  43114: "0x37475F044DE2437fC60F664d85AE0232d00695D1".toLowerCase(),
 };
 
 export const networkNames = {
   1: "Mainnet",
   56: "Binance Smart Chain",
-  137: "Polygon",
-  250: "Fantom Opera",
   4689: "IoTeX",
-  43114: "Avalanche C chain",
   333999: "Polis Olympus Chain",
 };
 
 export const networkLabels = {
   1: "Mainnet",
   56: "BSC",
-  137: "Polygon",
-  250: "Fantom",
   4689: "IoTeX",
-  43114: "Avalanche",
   333999: "Polis",
 };
 
@@ -142,21 +88,9 @@ export const networkCurrencies = {
     name: "Binance Coin",
     symbol: "BNB",
   },
-  137: {
-    name: "Matic",
-    symbol: "MATIC",
-  },
-  250: {
-    name: "Fantom",
-    symbol: "FTM",
-  },
   4689: {
     name: "IoTeX",
     symbol: "IOTEX",
-  },
-  43114: {
-    name: "Avalanche",
-    symbol: "AVAX",
   },
   333999: {
     name: "Polis",
@@ -172,34 +106,16 @@ export const chainUrls = {
     name: networkNames[1],
   },
   56: {
-    rpc: process.env.REACT_APP_BSC_RPC_URL.split(" "),
+    rpc: ["https://bsc-dataseed.binance.org/"],
     explorer: "https://bscscan.com",
     chainId: 56,
     name: networkNames[56],
-  },
-  137: {
-    rpc: ["https://polygon-rpc.com/"],
-    explorer: "https://polygonscan.com",
-    chainId: 137,
-    name: networkNames[137],
-  },
-  250: {
-    rpc: ["https://rpc.ftm.tools/"],
-    explorer: "https://ftmscan.com",
-    chainId: 250,
-    name: networkNames[250],
   },
   4689: {
     rpc: ["https://babel-api.mainnet.iotex.io"],
     explorer: "https://iotexscan.io",
     chainId: 4689,
     name: networkNames[4689],
-  },
-  43114: {
-    rpc: ["https://api.avax.network/ext/bc/C/rpc"],
-    explorer: "https://snowtrace.io",
-    chainId: 43114,
-    name: networkNames[43114],
   },
   333999: {
     rpc: ["https://rpc.polis.tech"],
@@ -213,10 +129,7 @@ export const chainUrls = {
 export const LOCAL_STORAGE_KEYS = {
   BRIDGE_DIRECTION: "bridge-direction",
   MAINNET_RPC_URL: "mainnet-rpc-url",
-  FTM_RPC_URL: "ftm-rpc-url",
   POLIS_RPC_URL: "polis-rpc-url",
   BSC_RPC_URL: "bsc-rpc-url",
-  POLYGON_RPC_URL: "polygon-rpc-url",
-  AVALANCHE_RPC_URL: "avalanche-rpc-url",
   IOTEX_RPC_URL: "iotex-rpc-url",
 };

@@ -8,12 +8,9 @@ import {
   networkCurrencies,
   networkLabels,
   networkNames,
-  POLIS_AVALANCHE_BRIDGE,
   POLIS_BSC_BRIDGE,
-  POLIS_FANTOM_BRIDGE,
   POLIS_IOTEX_BRIDGE,
   POLIS_MAINNET_BRIDGE,
-  POLIS_POLYGON_BRIDGE,
 } from "lib/constants";
 import { defaultTokens, networks } from "lib/networks";
 
@@ -23,7 +20,7 @@ export const getWalletProviderName = (provider) =>
   provider?.connection?.url || null;
 
 export const getNativeCurrency = (chainId) =>
-  nativeCurrencies[chainId || 333999];
+  nativeCurrencies[chainId || 1];
 
 export const getNetworkName = (chainId) =>
   networkNames[chainId] || "Unknown Network";
@@ -35,11 +32,11 @@ export const getNetworkCurrency = (chainId) =>
 
 export const getRPCUrl = (chainId, returnAsArray = false) =>
   returnAsArray
-    ? chainUrls[chainId || 333999].rpc
-    : chainUrls[chainId || 333999].rpc[0];
+    ? chainUrls[chainId || 1].rpc
+    : chainUrls[chainId || 1].rpc[0];
 
 export const getExplorerUrl = (chainId) =>
-  (chainUrls[chainId] || chainUrls[333999]).explorer;
+  (chainUrls[chainId] || chainUrls[1]).explorer;
 
 export const removeElement = (array, index) => {
   const cloneArr = [...array];
@@ -137,27 +134,14 @@ export const logDebug = (...args) => {
 };
 
 const {
-  AVALANCHE_RPC_URL,
   BSC_RPC_URL,
-  FANTOM_RPC_URL,
   IOTEX_RPC_URL,
   MAINNET_RPC_URL,
   POLIS_RPC_URL,
-  POLYGON_RPC_URL,
 } = LOCAL_STORAGE_KEYS;
 
 export const getRPCKeys = (bridgeDirection) => {
   switch (bridgeDirection) {
-    case POLIS_FANTOM_BRIDGE:
-      return {
-        homeRPCKey: POLIS_RPC_URL,
-        foreignRPCKey: FANTOM_RPC_URL,
-      };
-    case POLIS_POLYGON_BRIDGE:
-      return {
-        homeRPCKey: POLIS_RPC_URL,
-        foreignRPCKey: POLYGON_RPC_URL,
-      };
     case POLIS_BSC_BRIDGE:
       return {
         homeRPCKey: POLIS_RPC_URL,
@@ -168,11 +152,6 @@ export const getRPCKeys = (bridgeDirection) => {
         homeRPCKey: POLIS_RPC_URL,
         foreignRPCKey: MAINNET_RPC_URL,
       };
-    case POLIS_AVALANCHE_BRIDGE:
-      return {
-        homeRPCKey: POLIS_RPC_URL,
-        foreignRPCKey: AVALANCHE_RPC_URL,
-      };
     case POLIS_IOTEX_BRIDGE:
       return {
         homeRPCKey: POLIS_RPC_URL,
@@ -181,7 +160,7 @@ export const getRPCKeys = (bridgeDirection) => {
     default:
       return {
         homeRPCKey: POLIS_RPC_URL,
-        foreignRPCKey: FANTOM_RPC_URL,
+        foreignRPCKey: IOTEX_RPC_URL,
       };
   }
 };
