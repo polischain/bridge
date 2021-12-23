@@ -60,7 +60,7 @@ const ClaimErrorModal = ({ onClose, claimErrorShow, claimErrorToken }) => {
             >
               <Button
                 px={12}
-                colorScheme="blue"
+                color="blue"
                 mt={{ base: 2, md: 0 }}
                 w="100%"
                 onClick={onClose}

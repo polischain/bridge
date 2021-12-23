@@ -91,7 +91,7 @@ export const ManualClaim = ({ handleClaimError }) => {
           <Button
             w="100%"
             size="sm"
-            colorScheme="blue"
+            color="blue"
             onClick={claimTokens}
             isDisabled={!txHash}
             isLoading={loading || executing}

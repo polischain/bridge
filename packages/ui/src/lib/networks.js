@@ -67,6 +67,7 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
 
 const ENABLED_BRIDGES = [
   POLIS_MAINNET_BRIDGE,
+  POLIS_IOTEX_BRIDGE,
 ].map((b) => b.toLowerCase());
 
 const bridgeInfo = {

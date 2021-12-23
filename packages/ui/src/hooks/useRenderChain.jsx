@@ -45,7 +45,7 @@ export const useRenderChain = () => {
           m={1}
           borderRadius={5}
           size="1"
-          colorScheme="blue"
+          color="blue"
         >
           {networkName}
         </Badge>

@@ -216,7 +216,7 @@ export const ToToken = () => {
                   <Text>Receive {nativeCurrency.symbol}</Text>
                   <Switch
                     ml={2}
-                    colorScheme="blue"
+                    color="blue"
                     isChecked={shouldReceiveNativeCur}
                     onChange={changeToToken}
                   />
