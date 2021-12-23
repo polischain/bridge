@@ -21,7 +21,7 @@ export const LARGEST_UINT256 = BigNumber.from(
 
 export const POLLING_INTERVAL = 5000;
 
-export const DEFAULT_BRIDGE_DIRECTION = POLIS_MAINNET_BRIDGE;
+export const DEFAULT_BRIDGE_DIRECTION = POLIS_BSC_BRIDGE;
 
 export const nativeCurrencies = {
   1: {
@@ -55,14 +55,14 @@ export const nativeCurrencies = {
     symbol: "IOTEX",
     mode: "NATIVE",
     homeTokenAddress:
-      "0x5DF748dD4C0acf81a1a943EB52a0d0325b4d3B94".toLowerCase(),
+      "0xD6AEEa017b2AA350360E5F9fE76B13052444d2E2".toLowerCase(),
   },
 };
 
 export const nativeCurrencyMediators = {
   1: "0xa05924cbd2a8434b3993394b9bed122583a783ad".toLowerCase(),
   56: "0x7d5d0ba109a6b9f6dde7d2a89a8150b589d49504".toLowerCase(),
-  4689: "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558".toLowerCase(),
+  4689: "0x3D7183fd88cF51F61FF7F8ad5339f855a6048710".toLowerCase(),
 };
 
 export const networkNames = {

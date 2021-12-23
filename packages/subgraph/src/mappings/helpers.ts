@@ -14,52 +14,26 @@ export function getDirection(): String {
   let network = dataSource.network();
   let address = dataSource.address();
   if (network == "olympus") {
-    if (
-      address ==
-      Address.fromString("0x26f898A29CD9Ea4c327037547DF6FA7E2967b8D6")
-    ) {
-      return "polis-fantom";
-    }
-    if (
+    /*if (
       address ==
       Address.fromString("0x9CEBA3f59CE10F65311B56D5eF3895Ffbc3245e3")
     ) {
       return "polis-bsc";
-    }
+    }*/
     if (
       address ==
-      Address.fromString("0x0306BcA3Ea988112acf420aA58EBAbA40040A1Fd")
-    ) {
-      return "polis-matic";
-    }
-    if (
-      address ==
-      Address.fromString("0x96ba6eFcF8c12547fd4a069370602904D50e4d34")
+      Address.fromString("0xfc92b2DF91c8F6E6ECcBB75b45F21c359614cC87")
     ) {
       return "polis-mainnet";
     }
     if (
       address ==
-      Address.fromString("0xfB59876201405Aee8D8aDa645b168AFEdb442F76")
-    ) {
-      return "polis-avalanche";
-    }
-    if (
-      address ==
-      Address.fromString("0x1A8D1775335366F1068e6078813160Abf84c26bd")
+      Address.fromString("0xCb3c4a052a6823Dc4BedcAC58C95290Fce0d5Daa")
     ) {
       return "polis-iotex";
     }
     return "";
-  } else if (network == "fantom") {
-    if (
-      address ==
-      Address.fromString("0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558")
-    ) {
-      return "polis-fantom";
-    }
-    return "";
-  } else if (network == "bsc") {
+  } /*else if (network == "bsc") {
     if (
       address ==
       Address.fromString("0x75fBF4e5aD4b725Bb4E300B6b2572596f87CA2D3")
@@ -67,36 +41,20 @@ export function getDirection(): String {
       return "polis-bsc";
     }
     return "";
-  } else if (network == "matic") {
+  }*/ else if (network == "mainnet") {
     if (
       address ==
-      Address.fromString("0xDA4Afcd8c7305AbedEb676768b04D29412d60eFB")
-    ) {
-      return "polis-matic";
-    }
-    return "";
-  } else if (network == "mainnet") {
-    if (
-      address ==
-      Address.fromString("0x4f7488D150eA5295d20c8f0E3524b7897b1b7021")
+      Address.fromString("0x1A44a4c868D04E63b1823A98114580E067c29c97")
     ) {
       return "polis-mainnet";
-    }
-    return "";
-  } else if (network == "avalanche") {
-    if (
-      address ==
-      Address.fromString("0xfB59876201405Aee8D8aDa645b168AFEdb442F76")
-    ) {
-      return "polis-avalanche";
     }
     return "";
   } else if (network == "iotex") {
     if (
       address ==
-      Address.fromString("0x712B61e244CB26c8bB41655913d8076E144C7A21")
+      Address.fromString("0xB48C98c335A5109275A68EBcE9A959ef989bCeCB")
     ) {
-      return "polis-avalanche";
+      return "polis-iotex";
     }
     return "";
   }
@@ -152,20 +110,11 @@ export function updateHomeTokenInfo(
     if (network == "olympus") {
       token.homeChainId = 333999;
       token.homeName = tokenObject.name;
-    } else if (network == "fantom") {
-      token.homeChainId = 250;
-      token.homeName = tokenObject.name;
     } else if (network == "bsc") {
       token.homeChainId = 56;
       token.homeName = tokenObject.name;
-    } else if (network == "matic") {
-      token.homeChainId = 137;
-      token.homeName = tokenObject.name;
     } else if (network == "mainnet") {
       token.homeChainId = 1;
-      token.homeName = tokenObject.name;
-    } else if (network == "avalanche") {
-      token.homeChainId = 43114;
       token.homeName = tokenObject.name;
     } else if (network == "iotex") {
       token.homeChainId = 4689;

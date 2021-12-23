@@ -6,5 +6,14 @@
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/iotex/info/logo.png",
-  "tokens": []
+  "tokens": [
+    {
+      "address": "0x4973d10F256D1e780068c0C2a8959b632DD0572e",
+      "chainId": 4689,
+      "name": "SoulToken",
+      "symbol": "SOUL",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/hadeswap/assets/master/blockchains/olympus/assets/0xf1498e8103359fD96c5E08fb34b4C249B619025a/logo.png"
+    }
+  ]
 }
