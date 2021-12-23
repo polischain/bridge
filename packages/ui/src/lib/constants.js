@@ -100,7 +100,9 @@ export const networkCurrencies = {
 
 export const chainUrls = {
   1: {
-    rpc: ["https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet"],
+    rpc: [
+      "https://speedy-nodes-nyc.moralis.io/af0b2b28274f65d74267f0f2/eth/mainnet",
+    ],
     explorer: "https://etherscan.io",
     chainId: 1,
     name: networkNames[1],
@@ -124,7 +126,6 @@ export const chainUrls = {
     name: networkNames[333999],
   },
 };
-
 
 export const LOCAL_STORAGE_KEYS = {
   BRIDGE_DIRECTION: "bridge-direction",

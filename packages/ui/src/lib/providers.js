@@ -3,7 +3,8 @@ import memoize from "fast-memoize";
 import { LOCAL_STORAGE_KEYS } from "lib/constants";
 import { getNetworkLabel, getRPCUrl, logError } from "lib/helpers";
 
-const { MAINNET_RPC_URL, FTM_RPC_URL, IOTEX_RPC_URL, POLIS_RPC_URL  } = LOCAL_STORAGE_KEYS;
+const { MAINNET_RPC_URL, FTM_RPC_URL, IOTEX_RPC_URL, POLIS_RPC_URL } =
+  LOCAL_STORAGE_KEYS;
 
 const RPC_URL = {
   1: MAINNET_RPC_URL,

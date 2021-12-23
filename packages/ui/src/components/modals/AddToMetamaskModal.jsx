@@ -135,7 +135,13 @@ export const AddToMetamaskModal = ({ isOpen, onClose, token: tokenToAdd }) => {
 
             {needsNetworkChange && (
               <Flex align="center" direction="column" w="100%">
-                <Flex align="center" direction="column" w="100%" mt="4" color="white">
+                <Flex
+                  align="center"
+                  direction="column"
+                  w="100%"
+                  mt="4"
+                  color="white"
+                >
                   <Alert status="info" borderRadius={5}>
                     <AlertIcon minWidth="20px" />
                     <Text fontSize="small">

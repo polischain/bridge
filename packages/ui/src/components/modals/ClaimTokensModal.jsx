@@ -82,12 +82,7 @@ export const ClaimTokensModal = () => {
                   window.localStorage.setItem("dont-show-claims", "false");
                 }}
               >
-                <Button
-                  px={12}
-                  color="blue"
-                  mt={{ base: 2, md: 0 }}
-                  w="100%"
-                >
+                <Button px={12} color="blue" mt={{ base: 2, md: 0 }} w="100%">
                   Claim
                 </Button>
               </Link>

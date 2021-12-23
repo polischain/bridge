@@ -19,8 +19,7 @@ import { getOverriddenMediator, isOverridden } from "./overrides";
 export const getWalletProviderName = (provider) =>
   provider?.connection?.url || null;
 
-export const getNativeCurrency = (chainId) =>
-  nativeCurrencies[chainId || 1];
+export const getNativeCurrency = (chainId) => nativeCurrencies[chainId || 1];
 
 export const getNetworkName = (chainId) =>
   networkNames[chainId] || "Unknown Network";
@@ -31,9 +30,7 @@ export const getNetworkCurrency = (chainId) =>
   networkCurrencies[chainId] || { name: "Unknown", symbol: "Unknown" };
 
 export const getRPCUrl = (chainId, returnAsArray = false) =>
-  returnAsArray
-    ? chainUrls[chainId || 1].rpc
-    : chainUrls[chainId || 1].rpc[0];
+  returnAsArray ? chainUrls[chainId || 1].rpc : chainUrls[chainId || 1].rpc[0];
 
 export const getExplorerUrl = (chainId) =>
   (chainUrls[chainId] || chainUrls[1]).explorer;
@@ -131,12 +128,8 @@ export const logDebug = (...args) => {
   console.log(...args);
 };
 
-const {
-  BSC_RPC_URL,
-  IOTEX_RPC_URL,
-  MAINNET_RPC_URL,
-  POLIS_RPC_URL,
-} = LOCAL_STORAGE_KEYS;
+const { BSC_RPC_URL, IOTEX_RPC_URL, MAINNET_RPC_URL, POLIS_RPC_URL } =
+  LOCAL_STORAGE_KEYS;
 
 export const getRPCKeys = (bridgeDirection) => {
   switch (bridgeDirection) {

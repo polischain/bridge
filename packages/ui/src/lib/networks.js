@@ -5,11 +5,7 @@ import {
   POLIS_MAINNET_BRIDGE,
 } from "lib/constants";
 
-export {
-  POLIS_BSC_BRIDGE,
-  POLIS_IOTEX_BRIDGE,
-  POLIS_MAINNET_BRIDGE,
-};
+export { POLIS_BSC_BRIDGE, POLIS_IOTEX_BRIDGE, POLIS_MAINNET_BRIDGE };
 
 const POLIS_BSC_BRIDGE_CONFIG = {
   label: "polis / bsc",
@@ -54,21 +50,20 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   enableReversedBridge: true,
   enableForeignCurrencyBridge: true,
   foreignMediatorAddress:
-    "0xE472D737424809898F3d508464671C57D7d392b4".toLowerCase(),
+    "0xA05924CBd2A8434b3993394b9BEd122583A783AD".toLowerCase(),
   homeMediatorAddress:
-    "0x9E397A9886cec70634689e01e7345ce5a8361bFe".toLowerCase(),
+    "0x20ac39599A79708a4DC22C66A1122C20B2215735".toLowerCase(),
   foreignAmbAddress: "0x5F05B526a5226A8270b078c3569EEb4e95a66a28".toLowerCase(),
   homeAmbAddress: "0xf86EFED732234882A39Ee13e0A6B9e5253d86AB9".toLowerCase(),
   foreignGraphName: "polischain/polis-to-iotex-bridge",
   homeGraphName: "polischain/iotex-to-polis-bridge",
-  claimDisabled: true,
+  claimDisabled: false,
   tokensClaimDisabled: [],
 };
 
-const ENABLED_BRIDGES = [
-  POLIS_MAINNET_BRIDGE,
-  POLIS_IOTEX_BRIDGE,
-].map((b) => b.toLowerCase());
+const ENABLED_BRIDGES = [POLIS_MAINNET_BRIDGE, POLIS_IOTEX_BRIDGE].map((b) =>
+  b.toLowerCase()
+);
 
 const bridgeInfo = {
   [POLIS_MAINNET_BRIDGE]: POLIS_MAINNET_BRIDGE_CONFIG,
