@@ -127,10 +127,8 @@ export const logError = (...args) => {
 };
 
 export const logDebug = (...args) => {
-  if (process.env.REACT_APP_DEBUG_LOGS === "true") {
-    // eslint-disable-next-line no-console
-    console.log(...args);
-  }
+  // eslint-disable-next-line no-console
+  console.log(...args);
 };
 
 const {
@@ -166,7 +164,7 @@ export const getRPCKeys = (bridgeDirection) => {
 };
 
 export const getHelperContract = (chainId) =>
-  nativeCurrencyMediators[chainId || 250];
+  nativeCurrencyMediators[chainId || 1];
 
 export const getMediatorAddressWithoutOverride = (bridgeDirection, chainId) => {
   if (!bridgeDirection || !chainId) return null;
