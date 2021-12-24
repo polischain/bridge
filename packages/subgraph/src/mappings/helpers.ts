@@ -19,16 +19,16 @@ export function getDirection(): String {
       Address.fromString("0x9CEBA3f59CE10F65311B56D5eF3895Ffbc3245e3")
     ) {
       return "polis-bsc";
-    }*/
+    }
     if (
       address ==
       Address.fromString("0xfc92b2DF91c8F6E6ECcBB75b45F21c359614cC87")
     ) {
       return "polis-mainnet";
-    }
+    }*/
     if (
       address ==
-      Address.fromString("0xCb3c4a052a6823Dc4BedcAC58C95290Fce0d5Daa")
+      Address.fromString("0xA7B568C5A029a5d8429b53c9F14a03411d156f7B")
     ) {
       return "polis-iotex";
     }
@@ -41,7 +41,7 @@ export function getDirection(): String {
       return "polis-bsc";
     }
     return "";
-  }*/ else if (network == "mainnet") {
+  } else if (network == "mainnet") {
     if (
       address ==
       Address.fromString("0x1A44a4c868D04E63b1823A98114580E067c29c97")
@@ -49,10 +49,10 @@ export function getDirection(): String {
       return "polis-mainnet";
     }
     return "";
-  } else if (network == "iotex") {
+  } */else if (network == "iotex") {
     if (
       address ==
-      Address.fromString("0xB48C98c335A5109275A68EBcE9A959ef989bCeCB")
+      Address.fromString("0x257Afcb6D246715b05910838b8BfbCe44124728F")
     ) {
       return "polis-iotex";
     }

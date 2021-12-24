@@ -50,18 +50,18 @@ const POLIS_IOTEX_BRIDGE_CONFIG = {
   enableReversedBridge: true,
   enableForeignCurrencyBridge: true,
   foreignMediatorAddress:
-    "0xB48C98c335A5109275A68EBcE9A959ef989bCeCB".toLowerCase(),
+    "0x257Afcb6D246715b05910838b8BfbCe44124728F".toLowerCase(),
   homeMediatorAddress:
-    "0xCb3c4a052a6823Dc4BedcAC58C95290Fce0d5Daa".toLowerCase(),
-  foreignAmbAddress: "0x5F05B526a5226A8270b078c3569EEb4e95a66a28".toLowerCase(),
-  homeAmbAddress: "0xf86EFED732234882A39Ee13e0A6B9e5253d86AB9".toLowerCase(),
+    "0xA7B568C5A029a5d8429b53c9F14a03411d156f7B".toLowerCase(),
+  foreignAmbAddress: "0x0644725823181d8b7F60406d25A1F983012e7f42".toLowerCase(),
+  homeAmbAddress: "0xe351Db03f4D5Ca12e455e4945738F953cbd3A23C".toLowerCase(),
   foreignGraphName: "polischain/polis-to-iotex-bridge",
   homeGraphName: "polischain/iotex-to-polis-bridge",
   claimDisabled: false,
   tokensClaimDisabled: [],
 };
 
-const ENABLED_BRIDGES = [POLIS_MAINNET_BRIDGE, POLIS_IOTEX_BRIDGE].map((b) =>
+const ENABLED_BRIDGES = [POLIS_IOTEX_BRIDGE].map((b) =>
   b.toLowerCase()
 );
 

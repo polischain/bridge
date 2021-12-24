@@ -8,7 +8,7 @@
   "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/iotex/info/logo.png",
   "tokens": [
     {
-      "address": "0x4973d10F256D1e780068c0C2a8959b632DD0572e",
+      "address": "0x2e6ea9d9d6f1a38ce77023124f0491339629ea52",
       "chainId": 4689,
       "name": "SoulToken",
       "symbol": "SOUL",
