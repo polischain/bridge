@@ -7,8 +7,6 @@ const fetchDefaultTokens = async (chainId) => {
   switch (chainId) {
     case 1:
       return mainnetList.tokens.filter((token) => token.chainId === chainId);
-    case 56:
-      return bscList.tokens.filter((token) => token.chainId === chainId);
     case 4689:
       return iotexList.tokens.filter((token) => token.chainId === chainId);
     case 333999:

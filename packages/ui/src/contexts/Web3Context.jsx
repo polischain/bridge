@@ -15,7 +15,6 @@ export const useWeb3Context = () => useContext(Web3Context);
 
 const rpc = {
   1: getRPCUrl(1),
-  56: getRPCUrl(56),
   4689: getRPCUrl(4689),
   333999: getRPCUrl(333999),
 };

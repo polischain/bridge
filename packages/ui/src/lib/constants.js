@@ -1,6 +1,5 @@
 import { BigNumber } from "ethers";
 
-export const POLIS_BSC_BRIDGE = "polis-bsc";
 export const POLIS_IOTEX_BRIDGE = "polis-iotex";
 export const POLIS_MAINNET_BRIDGE = "polis-mainnet";
 
@@ -8,9 +7,6 @@ export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
 
 export const ETHEREUM_CURRENCY_LOGO =
   "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png";
-
-export const BNB_CURRENCY_LOGO =
-  "https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png";
 
 export const IOTEX_CURRENCY_LOGO =
   "https://s2.coinmarketcap.com/static/img/coins/64x64/2777.png";
@@ -32,19 +28,7 @@ export const nativeCurrencies = {
     address: ADDRESS_ZERO,
     symbol: "ETH",
     mode: "NATIVE",
-    homeTokenAddress:
-      "0x5B5B05D93c7e374a6D223BFA9591281fbf48237F".toLowerCase(),
-  },
-  56: {
-    chainId: 56,
-    decimals: 18,
-    logoURI: BNB_CURRENCY_LOGO,
-    name: "Binance Coin",
-    address: ADDRESS_ZERO,
-    symbol: "BNB",
-    mode: "NATIVE",
-    homeTokenAddress:
-      "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E".toLowerCase(),
+    homeTokenAddress: "".toLowerCase(),
   },
   4689: {
     chainId: 4689,
@@ -54,27 +38,23 @@ export const nativeCurrencies = {
     address: ADDRESS_ZERO,
     symbol: "IOTEX",
     mode: "NATIVE",
-    homeTokenAddress:
-      "0xD6AEEa017b2AA350360E5F9fE76B13052444d2E2".toLowerCase(),
+    homeTokenAddress: "".toLowerCase(),
   },
 };
 
 export const nativeCurrencyMediators = {
   1: "0xa05924cbd2a8434b3993394b9bed122583a783ad".toLowerCase(),
-  56: "0x7d5d0ba109a6b9f6dde7d2a89a8150b589d49504".toLowerCase(),
   4689: "0x3D7183fd88cF51F61FF7F8ad5339f855a6048710".toLowerCase(),
 };
 
 export const networkNames = {
   1: "Mainnet",
-  56: "Binance Smart Chain",
   4689: "IoTeX",
   333999: "Polis Olympus Chain",
 };
 
 export const networkLabels = {
   1: "Mainnet",
-  56: "BSC",
   4689: "IoTeX",
   333999: "Polis",
 };
@@ -83,10 +63,6 @@ export const networkCurrencies = {
   1: {
     name: "Ethereum",
     symbol: "ETH",
-  },
-  56: {
-    name: "Binance Coin",
-    symbol: "BNB",
   },
   4689: {
     name: "IoTeX",
@@ -107,12 +83,6 @@ export const chainUrls = {
     chainId: 1,
     name: networkNames[1],
   },
-  56: {
-    rpc: ["https://bsc-dataseed.binance.org/"],
-    explorer: "https://bscscan.com",
-    chainId: 56,
-    name: networkNames[56],
-  },
   4689: {
     rpc: ["https://babel-api.mainnet.iotex.io"],
     explorer: "https://iotexscan.io",
@@ -131,6 +101,5 @@ export const LOCAL_STORAGE_KEYS = {
   BRIDGE_DIRECTION: "bridge-direction",
   MAINNET_RPC_URL: "mainnet-rpc-url",
   POLIS_RPC_URL: "polis-rpc-url",
-  BSC_RPC_URL: "bsc-rpc-url",
   IOTEX_RPC_URL: "iotex-rpc-url",
 };

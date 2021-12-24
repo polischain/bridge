@@ -1,29 +1,10 @@
 import {
   nativeCurrencies,
-  POLIS_BSC_BRIDGE,
   POLIS_IOTEX_BRIDGE,
   POLIS_MAINNET_BRIDGE,
 } from "lib/constants";
 
-export { POLIS_BSC_BRIDGE, POLIS_IOTEX_BRIDGE, POLIS_MAINNET_BRIDGE };
-
-const POLIS_BSC_BRIDGE_CONFIG = {
-  label: "polis / bsc",
-  homeChainId: 333999,
-  foreignChainId: 56,
-  enableReversedBridge: true,
-  enableForeignCurrencyBridge: true,
-  foreignMediatorAddress:
-    "0x75fBF4e5aD4b725Bb4E300B6b2572596f87CA2D3".toLowerCase(),
-  homeMediatorAddress:
-    "0x9CEBA3f59CE10F65311B56D5eF3895Ffbc3245e3".toLowerCase(),
-  foreignAmbAddress: "0xF34029CD8A376f30d65Bf8f71C3bBFA01Fab91a3".toLowerCase(),
-  homeAmbAddress: "0x731885890fdF7e53311A7271eb0713E7dbC25E8a".toLowerCase(),
-  foreignGraphName: "polischain/polis-to-bsc-bridge",
-  homeGraphName: "polischain/bsc-to-polis-bridge",
-  claimDisabled: false,
-  tokensClaimDisabled: [],
-};
+export { POLIS_IOTEX_BRIDGE, POLIS_MAINNET_BRIDGE };
 
 const POLIS_MAINNET_BRIDGE_CONFIG = {
   label: "polis / eth",
@@ -67,7 +48,6 @@ const ENABLED_BRIDGES = [POLIS_IOTEX_BRIDGE].map((b) =>
 
 const bridgeInfo = {
   [POLIS_MAINNET_BRIDGE]: POLIS_MAINNET_BRIDGE_CONFIG,
-  [POLIS_BSC_BRIDGE]: POLIS_BSC_BRIDGE_CONFIG,
   [POLIS_IOTEX_BRIDGE]: POLIS_IOTEX_BRIDGE_CONFIG,
 };
 
@@ -88,15 +68,6 @@ export const defaultTokens = {
       chainId: 333999,
       symbol: "WETH",
       name: "Wrapped ETH from Mainnet",
-    },
-  },
-  [POLIS_BSC_BRIDGE]: {
-    56: nativeCurrencies[56],
-    333999: {
-      address: "0xDb6D07410F3b4e73553Ede8aFc2FC6922B19863E",
-      chainId: 333999,
-      symbol: "WBNB",
-      name: "Wrapped BNB from BSC",
     },
   },
   [POLIS_IOTEX_BRIDGE]: {

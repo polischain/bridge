@@ -8,7 +8,6 @@ import {
   networkCurrencies,
   networkLabels,
   networkNames,
-  POLIS_BSC_BRIDGE,
   POLIS_IOTEX_BRIDGE,
   POLIS_MAINNET_BRIDGE,
 } from "lib/constants";
@@ -128,16 +127,11 @@ export const logDebug = (...args) => {
   console.log(...args);
 };
 
-const { BSC_RPC_URL, IOTEX_RPC_URL, MAINNET_RPC_URL, POLIS_RPC_URL } =
+const { IOTEX_RPC_URL, MAINNET_RPC_URL, POLIS_RPC_URL } =
   LOCAL_STORAGE_KEYS;
 
 export const getRPCKeys = (bridgeDirection) => {
   switch (bridgeDirection) {
-    case POLIS_BSC_BRIDGE:
-      return {
-        homeRPCKey: POLIS_RPC_URL,
-        foreignRPCKey: BSC_RPC_URL,
-      };
     case POLIS_MAINNET_BRIDGE:
       return {
         homeRPCKey: POLIS_RPC_URL,

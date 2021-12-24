@@ -47,9 +47,6 @@ const Tag = ({ bg, txt }) => (
 
 const networkTags = {
   1: <Tag bg="#0084ff" txt="ETH" />,
-  56: <Tag bg="#0084ff" txt="BSC" />,
-  137: <Tag bg="#0084ff" txt="POLYGON" />,
-  250: <Tag bg="#0084ff" txt="FTM" />,
   4689: <Tag bg="#0084ff" txt="IOTEX" />,
   333999: <Tag bg="#0084ff" txt="POLIS" />,
 };
